@@ -12,6 +12,10 @@ namespace Study3D.MiniGolf
 
         private void Update()
         {
+            if (ball.gameObject.transform.position.y < -1f)
+            {
+                ball.PlaceAt(startPosition);
+            }
             if (SimpleInput.GetKeyDown(Key.Digit1))
             {
                 ball.ReturnToLasShotPosition();

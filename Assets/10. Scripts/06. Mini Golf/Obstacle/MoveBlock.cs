@@ -29,6 +29,7 @@ public class MoveBlock : MonoBehaviour
 
         if (distance <= 0.01f)
         {
+            //(startPos, movePos) = (movePos, startPos); 이건 또 신기하네
             Vector3 temp = startPos;
             startPos = movePos;
             movePos = temp;
